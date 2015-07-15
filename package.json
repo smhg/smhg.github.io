@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "smhg.github.io",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-style": "chokidar 'style/index.less' -c 'npm run build-style'",
+    "watch": "npm run watch-style",
+    "build-style": "lessc style/index.less style/index.css --clean-css=\"--s1 --advanced --compatibility=ie8\" --source-map",
+    "build": "npm run build-style"
   },
   "repository": {
     "type": "git",
@@ -14,5 +18,10 @@
     "url": "https://github.com/smhg/smhg.github.io/issues"
   },
   "homepage": "https://smhg.github.io",
+  "devDependencies": {
+    "chokidar-cli": "^0.3.0",
+    "less": "^2.5.1",
+    "less-plugin-clean-css": "^1.5.0"
+  },
   "license": "MIT"
 }
