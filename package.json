@@ -1,7 +1,7 @@
 {
   "name": "smhg.github.io",
   "version": "1.0.0",
-  "description": "Sam Hauglustaine",
+  "description": "smhg.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +13,6 @@
   "bugs": {
     "url": "https://github.com/smhg/smhg.github.io/issues"
   },
-  "homepage": "https://smhg.github.io"
+  "homepage": "https://smhg.github.io",
+  "license": "MIT"
 }
