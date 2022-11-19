@@ -20,7 +20,7 @@
   },
   "homepage": "https://smhg.github.io",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "5.15.4",
+    "@fortawesome/fontawesome-free": "6.2.1",
     "chokidar-cli": "1.2.2",
     "less": "3.9.0",
     "less-plugin-clean-css": "1.5.1",
