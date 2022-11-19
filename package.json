@@ -7,7 +7,7 @@
     "watch-style": "chokidar 'style/*.less' -c 'npm run build-style'",
     "watch": "npm run build && npm run watch-style",
     "font": "cp -r node_modules/materialize-css/dist/fonts/* fonts & cp node_modules/@fortawesome/fontawesome-free/webfonts/* fonts",
-    "build-style": "npm run font & lessc style/index.less style/index.css --clean-css=\"--s1 --advanced --compatibility=ie8\" --source-map",
+    "build-style": "npm run font & lessc style/index.less style/index.css --clean-css=\"--s1 --advanced\" --source-map",
     "build": "npm run build-style"
   },
   "repository": {
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "6.2.1",
     "chokidar-cli": "1.2.2",
-    "less": "3.9.0",
+    "less": "4.1.3",
     "less-plugin-clean-css": "1.5.1",
     "materialize-css": "0.100.2"
   },
