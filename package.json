@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-style": "chokidar 'style/*.less' -c 'npm run build-style'",
     "watch": "npm run build && npm run watch-style",
-    "font": "cp -r node_modules/materialize-css/dist/fonts/* font & cp node_modules/font-awesome/fonts/*-webfont.* fonts",
+    "font": "cp -r node_modules/materialize-css/dist/fonts/* fonts & cp node_modules/@fortawesome/fontawesome-free/webfonts/* fonts",
     "build-style": "npm run font & lessc style/index.less style/index.css --clean-css=\"--s1 --advanced --compatibility=ie8\" --source-map",
     "build": "npm run build-style"
   },
@@ -20,8 +20,8 @@
   },
   "homepage": "https://smhg.github.io",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "5.15.4",
     "chokidar-cli": "1.2.2",
-    "font-awesome": "4.7.0",
     "less": "3.9.0",
     "less-plugin-clean-css": "1.5.1",
     "materialize-css": "0.100.2"
